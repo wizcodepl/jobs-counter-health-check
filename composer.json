@@ -61,16 +61,6 @@
             "phpstan/extension-installer": true
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "WizcodePl\\JobsCounterHealthCheck\\JobsCounterHealthCheckServiceProvider"
-            ],
-            "aliases": {
-                "JobsCounterHealthCheck": "WizcodePl\\JobsCounterHealthCheck\\Facades\\JobsCounterHealthCheck"
-            }
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
