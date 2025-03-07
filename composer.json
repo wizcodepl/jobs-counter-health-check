@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "wizcodepl/jobs-counter-health-check",
+    "description": "This package provides a Laravel Health check to monitor the number of active and failed jobs in your queue system.",
     "keywords": [
-        ":vendor_name",
+        "WizcodePl",
         "laravel",
-        ":package_slug"
+        "jobs-counter-health-check"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/wizcodepl/jobs-counter-health-check",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Jakub Szcześniak",
+            "email": "jakub.szczesniak@wizcode.pl",
             "role": "Developer"
         }
     ],
@@ -31,17 +31,18 @@
         "phpstan/extension-installer": "^1.3||^2.0",
         "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
         "phpstan/phpstan-phpunit": "^1.3||^2.0",
-        "spatie/laravel-ray": "^1.35"
+        "spatie/laravel-ray": "^1.35",
+        "spatie/laravel-health": "^1.22.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "WizcodePl\\JobsCounterHealthCheck\\": "src/",
+            "WizcodePl\\JobsCounterHealthCheck\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "WizcodePl\\JobsCounterHealthCheck\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "WizcodePl\\JobsCounterHealthCheck\\JobsCounterHealthCheckServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "JobsCounterHealthCheck": "WizcodePl\\JobsCounterHealthCheck\\Facades\\JobsCounterHealthCheck"
             }
         }
     },
