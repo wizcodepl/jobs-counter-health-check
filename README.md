@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="art/logo.svg" alt="Jobs Counter Health Check" width="200">
+</p>
+
 # This package provides a Laravel Health check to monitor the number of active and failed jobs in your queue system.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/wizcodepl/jobs-counter-health-check.svg?style=flat-square)](https://packagist.org/packages/wizcodepl/jobs-counter-health-check)
